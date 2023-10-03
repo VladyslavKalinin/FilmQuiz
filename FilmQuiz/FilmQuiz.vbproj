@@ -125,6 +125,12 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion1.resx">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion2.resx">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -143,6 +149,33 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-main_4560aff7.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200x675mf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050417-audrey-hepburn-lead-2000-22fc49d94f9543e4adf2db069348f154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\670-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20150621-Groundhog-day.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_VLNEOOp8z9KuzMOk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Darth-Vader-David-Prowse-cab4049.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l-intro-1676066290.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
