@@ -22,9 +22,65 @@ Partial Class frmHighScore
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.lblMessage = New System.Windows.Forms.Label()
+        Me.lstHighScore = New System.Windows.Forms.ListBox()
+        Me.btnAgain = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lblMessage
+        '
+        Me.lblMessage.AutoSize = True
+        Me.lblMessage.Location = New System.Drawing.Point(161, 70)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(29, 13)
+        Me.lblMessage.TabIndex = 0
+        Me.lblMessage.Text = "label"
+        '
+        'lstHighScore
+        '
+        Me.lstHighScore.FormattingEnabled = True
+        Me.lstHighScore.Location = New System.Drawing.Point(85, 174)
+        Me.lstHighScore.Name = "lstHighScore"
+        Me.lstHighScore.Size = New System.Drawing.Size(374, 199)
+        Me.lstHighScore.TabIndex = 1
+        '
+        'btnAgain
+        '
+        Me.btnAgain.Location = New System.Drawing.Point(515, 114)
+        Me.btnAgain.Name = "btnAgain"
+        Me.btnAgain.Size = New System.Drawing.Size(75, 23)
+        Me.btnAgain.TabIndex = 2
+        Me.btnAgain.Text = "Again"
+        Me.btnAgain.UseVisualStyleBackColor = True
+        '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(515, 144)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(75, 23)
+        Me.btnQuit.TabIndex = 3
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        '
+        'frmHighScore
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.btnAgain)
+        Me.Controls.Add(Me.lstHighScore)
+        Me.Controls.Add(Me.lblMessage)
+        Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents lblMessage As Label
+    Friend WithEvents lstHighScore As ListBox
+    Friend WithEvents btnAgain As Button
+    Friend WithEvents btnQuit As Button
 End Class

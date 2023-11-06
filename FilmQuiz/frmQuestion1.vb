@@ -5,7 +5,8 @@
         End If
 
         frmQuestion2.Show()
-        Me.Hide()
 
+
+        Me.Hide()
     End Sub
 End Class

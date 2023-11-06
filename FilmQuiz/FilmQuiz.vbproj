@@ -122,6 +122,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmHighScore.resx">
+      <DependentUpon>frmHighScore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuestion2.resx">
       <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion3.resx">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
