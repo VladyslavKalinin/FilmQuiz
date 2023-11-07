@@ -13,8 +13,7 @@
             lblMessage.Text = "Sorry Your Score Was Not Good Enough"
         Else
             lblMessage.Text = "Congratulations! Your Score Will Be Added To The Hall Of Fame"
-            lstHighScore.Items.Add(playerName & vbTab & playerScore
-                                   )
+            lstHighScore.Items.Add(playerName & vbTab & playerScore)
         End If
     End Sub
 End Class

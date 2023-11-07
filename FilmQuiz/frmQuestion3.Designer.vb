@@ -22,28 +22,21 @@ Partial Class frmQuestion3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion3))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.barQ3 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQ3 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(514, 103)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(199, 189)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -57,10 +50,10 @@ Partial Class frmQuestion3
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.btnAnswer4)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer3)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer2)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer1)
         Me.GroupBox1.Location = New System.Drawing.Point(96, 137)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 155)
@@ -68,49 +61,49 @@ Partial Class frmQuestion3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(7, 21)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(49, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "2010"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(7, 44)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(49, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "2013"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'btnAnswer4
         '
         Me.btnAnswer4.AutoSize = True
-        Me.btnAnswer4.Location = New System.Drawing.Point(7, 68)
+        Me.btnAnswer4.Location = New System.Drawing.Point(7, 92)
         Me.btnAnswer4.Name = "btnAnswer4"
         Me.btnAnswer4.Size = New System.Drawing.Size(49, 17)
-        Me.btnAnswer4.TabIndex = 2
+        Me.btnAnswer4.TabIndex = 3
         Me.btnAnswer4.TabStop = True
-        Me.btnAnswer4.Text = "2014"
+        Me.btnAnswer4.Text = "2017"
         Me.btnAnswer4.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'btnAnswer3
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(7, 92)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(49, 17)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "2017"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.btnAnswer3.AutoSize = True
+        Me.btnAnswer3.Location = New System.Drawing.Point(7, 68)
+        Me.btnAnswer3.Name = "btnAnswer3"
+        Me.btnAnswer3.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer3.TabIndex = 2
+        Me.btnAnswer3.TabStop = True
+        Me.btnAnswer3.Text = "2014"
+        Me.btnAnswer3.UseVisualStyleBackColor = True
+        '
+        'btnAnswer2
+        '
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Location = New System.Drawing.Point(7, 44)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer2.TabIndex = 1
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "2013"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
+        '
+        'btnAnswer1
+        '
+        Me.btnAnswer1.AutoSize = True
+        Me.btnAnswer1.Location = New System.Drawing.Point(7, 21)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer1.TabIndex = 0
+        Me.btnAnswer1.TabStop = True
+        Me.btnAnswer1.Text = "2010"
+        Me.btnAnswer1.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -121,20 +114,42 @@ Partial Class frmQuestion3
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(514, 103)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(199, 189)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'barQ3
+        '
+        Me.barQ3.Location = New System.Drawing.Point(13, 415)
+        Me.barQ3.Name = "barQ3"
+        Me.barQ3.Size = New System.Drawing.Size(775, 23)
+        Me.barQ3.TabIndex = 4
+        '
+        'tmrQ3
+        '
+        Me.tmrQ3.Interval = 1000
+        '
         'frmQuestion3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.barQ3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "frmQuestion3"
         Me.Text = "frmQuestion3"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -143,9 +158,11 @@ Partial Class frmQuestion3
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents btnAnswer4 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents btnAnswer3 As RadioButton
+    Friend WithEvents btnAnswer2 As RadioButton
+    Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents Button1 As Button
+    Friend WithEvents barQ3 As ProgressBar
+    Friend WithEvents tmrQ3 As Timer
 End Class
