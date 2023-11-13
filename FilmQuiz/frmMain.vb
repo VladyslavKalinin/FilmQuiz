@@ -17,4 +17,23 @@
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         Application.Exit()
     End Sub
+
+    Public Sub stopTrack()
+
+        wmpQuiz.Ctlcontrols.stop()
+
+    End Sub
+
+
+
+    Public Sub playTrack(ByVal track As String)
+
+        wmpQuiz.Ctlcontrols.stop()
+
+        wmpQuiz.URL = track
+
+        wmpQuiz.Ctlcontrols.play()
+
+    End Sub
+
 End Class

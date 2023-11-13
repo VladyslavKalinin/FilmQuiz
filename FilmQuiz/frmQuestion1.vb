@@ -5,6 +5,7 @@
         If btnAnswer2.Checked Then
             playerScore = playerScore + 1
         End If
+        frmMain.stopTrack()
         frmQuestion2.Show()
         frmQuestion2.init()
         Me.Hide()
@@ -15,6 +16,9 @@
         progressCount = 0
         tmrQ1.Enabled = True
         barQ1.Value = 0
+
+        frmMain.playTrack("C:\Users\11161870\Source\Repos\VladyslavKalinin\FilmQuiz\FilmQuiz\questionMusic.mp3")
+
         btnAnswer1.Checked = False
         btnAnswer2.Checked = False
         btnAnswer3.Checked = False
@@ -31,10 +35,12 @@
         If progressCount = 10 Then
             tmrQ1.Enabled = False
             MsgBox("Too Slow Try Again")
+            frmMain.stopTrack()
             frmQuestion2.Show()
             frmQuestion2.init()
             Me.Hide()
 
         End If
     End Sub
+
 End Class
